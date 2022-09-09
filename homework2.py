@@ -13,7 +13,11 @@ print(numbers) """
 
 """ print(*[sum(int(i) for i in input('Введите число: ') if i.isnumeric())]) """
 
-
-
+""" 3.Задайте список из n чисел последовательности $(1+\frac 1 n)^n$ и выведите на экран их сумму. """
+""" summa = 0
+for i in range(1, int(input()) + 1):
+    summa += ((1 + 1 / i) ** i)
+print(round(summa))
+ """
 
 
