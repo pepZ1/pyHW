@@ -1,14 +1,19 @@
-""" N = int(input('Введите количество чисел больше 0: '))
-
-a = 1
-res = 1
-
-print (res)
-while a < N:
-   res = res*(-3)
-   a += 1
-print (res) """
-import random
+""" 5. Реализуйте алгоритм перемешивания списка. """
+""" import random
 numbers = [1, 2, 3, 4, 5]
 random.shuffle(numbers)
-print(numbers)
+print(numbers) """
+
+""" Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
+
+Пример:
+
+- 6782 -> 23
+- 0,56 -> 11 """
+
+""" print(*[sum(int(i) for i in input('Введите число: ') if i.isnumeric())]) """
+
+
+
+
+
