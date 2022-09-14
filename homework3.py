@@ -16,7 +16,20 @@ print(sum) """
 Пример:- [2, 3, 4, 5, 6] => [12, 15, 16];
 - [2, 3, 5, 6] => [12, 15] """
 
+""" arr = list(map(int, input("Введите числа через пробел:\n").split()))
 
+def mult(lst):
+    new_lst = []
+    if len(lst) % 2 != 0:
+        num_par = len(lst)//2 + 1 
+    else: 
+        num_par = len(lst)//2
+    
+    for i in range(num_par):
+        new_lst.append(lst[i]*lst[len(lst)-i-1])
+    return new_lst
+
+print(f'Произведения пар чисел: {mult(arr)}') """
 
 """ Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 
