@@ -60,7 +60,7 @@ while 1:
 
 - [1.1, 1.2, 3.1, 5, 10.01] => 0.19 """
 
-arr = [1.1, 1.2, 3.1, 5, 10.01]
+""" arr = [1.1, 1.2, 3.1, 5, 10.01]
 
 frac_part = []
 
@@ -68,4 +68,38 @@ for i in arr:
     if i%1 != 0:
         frac_part.append(round(i%1,2))
 
-print(max(frac_part)-min(frac_part))
+print(max(frac_part)-min(frac_part)) """
+
+""" Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
+
+Пример:
+
+- для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] """
+
+num = int(input('Введите число: '))
+
+neg_num = - num
+
+Fibo = []
+
+def FibMinus(n):
+    if n == -1: return 1
+    elif n == -2: return -1
+    return FibMinus (n + 2) - FibMinus (n + 1) 
+
+def FibPlus(n):
+    if n in [1,2]:
+        return 1
+    elif n == 0:
+        return 0
+    else:
+        return FibPlus(n-1) + FibPlus(n-2)
+
+for i in range(neg_num, num + 1):
+    if i < 0:
+        Fibo.append(FibMinus(i))
+    else:
+        Fibo.append(FibPlus(i))    
+
+print(Fibo)
+
