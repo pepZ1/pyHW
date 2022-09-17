@@ -14,7 +14,7 @@ print(pi) """
 
 """ Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N. """
 
-num = int(input('Введите число: '))
+""" num = int(input('Введите число: '))
 def fac(n):
     delitor = []
     i = 2
@@ -27,4 +27,24 @@ def fac(n):
         delitor.append(n)
     return delitor
 
-print(fac(num))
+print(fac(num)) """
+
+""" Задайте последовательность чисел. 
+Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности. """
+
+""" from random import randint
+min = 1
+max = 10
+size = 20
+
+my_list = [randint(min,max) for i in range(size)]
+
+uniq_list =[]
+for i in range(len(my_list)):
+    count = 0
+    for r in my_list:
+        if my_list[i] == r: count +=1
+    
+
+print(f'Рандом:                {my_list}')
+print(f'Ряд без повторений:    {set(my_list)}') """
