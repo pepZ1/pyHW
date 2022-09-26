@@ -1,13 +1,13 @@
 """ Напишите программу, удаляющую из текста все слова, содержащие ""абв"". """
 
-""" word = 'Сначала я абв как абвпонял, а потом понял!'
+word = 'Сначала я абв как абвпонял, а потом понял!'
 find = 'абв'
 
 
 def del_words(letters, del_text):
     letters = list(filter(lambda x: del_text not in x, letters.split()))
     return " ".join(letters)
-print(del_words(word, find)) """
+print(del_words(word, find))
 
 """ Создайте программу для игры с конфетами человек против человека.
 
@@ -17,7 +17,7 @@ a) Добавьте игру против бота
 
 b) Подумайте как наделить бота ""интеллектом"" """
 
-""" from random import randint
+from random import randint
 
 player1 = input('Игрок 1 представьтесь: ')
 player2 = input('Игрок 2 представьтесь: ')
@@ -54,11 +54,11 @@ while quant_cand > max_take_cand:
 if priority:
     print(f'Победа за {player1}')
 else:
-    print(f'Победа за {player2}') """
+    print(f'Победа за {player2}')
 
 """vs bot"""
 
-""" from random import randint
+from random import randint
 
 player1 = input('Введите Ваше имя: ')
 player2 = 'Automaton3000'
@@ -104,12 +104,12 @@ while quant_cand > max_take_cand:
 if priority:
     print(f'Победа за {player1}')
 else:
-    print(f'Победа за {player2}') """
+    print(f'Победа за {player2}')
 
 """ Создайте программу для игры в ""Крестики-нолики"". """
 
 
-""" pole = list(range(1, 10))
+pole = list(range(1, 10))
 
 def draw_pole(pole):
     print('-------------')
@@ -163,7 +163,7 @@ def main_def(board):
             break
     draw_pole(board)
 
-main_def(pole) """
+main_def(pole)
 
 """ Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных. """
 
