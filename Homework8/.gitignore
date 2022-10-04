@@ -1,0 +1,10 @@
+/__pycache__
+/data_file.json
+/diagramm.drawio
+/html_creator.py
+/json_creator.py
+/xml_creator.py
+/temp*
+/temp.##
+/new_data.xml
+/no_view
